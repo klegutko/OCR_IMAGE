@@ -92,6 +92,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Program\tesseractPol\pol.traineddata" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +101,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Program\OCR_IMAGE.exe" />
+    <Content Include="Program\Tesseract.dll" />
+    <Content Include="Program\x64\leptonica-1.82.0.dll" />
+    <Content Include="Program\x64\tesseract50.dll" />
+    <Content Include="Program\x86\leptonica-1.82.0.dll" />
+    <Content Include="Program\x86\tesseract50.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\sample.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Tesseract.5.2.0\build\Tesseract.targets" Condition="Exists('..\packages\Tesseract.5.2.0\build\Tesseract.targets')" />
